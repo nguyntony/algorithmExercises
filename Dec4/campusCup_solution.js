@@ -71,3 +71,5 @@ const campusCup = (emails) => {
 }
 // console.log(campusCup(emails4))
 campusCup(emails4)
+
+// still need to sort the strings lexo order.
