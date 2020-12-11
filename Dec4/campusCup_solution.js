@@ -73,3 +73,4 @@ const campusCup = (emails) => {
 campusCup(emails4)
 
 // still need to sort the strings lexo order.
+// also need to clean up some code and make it more readable. 
