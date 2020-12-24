@@ -13,19 +13,23 @@ const nums = [
 ]
 
 const combine = (arr1, arr2) => {
-    const combo = []
-    const obj = {}
+    const combined = []
+    const cache = {}
 
-    for (person of arr1) { // this is going to loop through the names array
-
-        obj.first = person.first;
-        obj.last = person.last;
-        obj.phone = arr2.find(x => x.last === person.last).phone;
-
-        combo.push(obj);
+    for (person of arr2) {
+        if (!cache[person.last]) {
+            cache[person.last] = person.phone
+        }
     }
 
-    return combo;
+    for (person of arr1) {
+        let obj = {}
+        obj.first = person.first;
+        obj.last = person.last;
+        obj.phone = cache[person.last]
+        combined.push(obj)
+    }
+    return combined;
 }
 
 console.log(combine(names, nums))
