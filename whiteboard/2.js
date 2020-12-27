@@ -12,11 +12,11 @@ const palidrome = str => {
     str = str.toLowerCase()
     cache = {}
 
-    for (idx, letter of str) {
+    for (idx in str) {
         // if (cache[letter]) { // this may need to be rewritten because it is not functioning as expected
         //     cache[letter] = letter
         // }
-        cache[idx] = letter
+        cache[idx] = str[idx]
 
     }
 
