@@ -18,15 +18,20 @@ console.log(palidrome("racecar"))
 
 
 // 2. Given two variables that are equal to any integer. Swap the values of those variables without using a third variable
-//let a = 1;
-// let b = 2;
+let a = 22;
+let b = 14;
 
 // a = a + b;
 // b = a - b;
 // a = a - b;
 
-// a; // => 2
-// b; // => 1
+a = a + b; // 15
+b = a - b // 5
+a = a - b
+
+console.log(`a ${a}`)
+console.log(`b ${b}`)
+
 
 
 
