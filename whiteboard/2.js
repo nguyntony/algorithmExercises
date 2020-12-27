@@ -9,18 +9,10 @@
 // 3. can we do this using a cache system?
 
 const palidrome = str => {
-    str = str.toLowerCase().split("")
-    cache = {}
-
-    for (idx in str) {
-        // if (cache[letter]) { // this may need to be rewritten because it is not functioning as expected
-        //     cache[letter] = letter
-        // }
-        cache[idx] = str[idx]
-
-    }
-
-    return cache
+    str.toLowerCase().split("")
+    let newStr = str.toLowerCase().split("").reverse().join()
+    console.log(`${str}\n${newStr}`)
+    return newStr === str;
 }
 
 console.log(palidrome("racecar"))
