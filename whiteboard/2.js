@@ -9,9 +9,8 @@
 // 3. can we do this using a cache system?
 
 const palidrome = str => {
-    str.toLowerCase().split("")
-    let newStr = str.toLowerCase().split("").reverse().join()
-    console.log(`${str}\n${newStr}`)
+    str = str.toLowerCase().split("")
+    let newStr = str.reverse()
     return newStr === str;
 }
 
