@@ -9,7 +9,7 @@
 // 3. can we do this using a cache system?
 
 const palidrome = str => {
-    str = str.toLowerCase()
+    str = str.toLowerCase().split("")
     cache = {}
 
     for (idx in str) {
