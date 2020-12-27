@@ -8,7 +8,7 @@
 // 2. we need to reverse the string then make sure that the letters are the same reversed.
 // 3. can we do this using a cache system?
 
-const palidromme = str => {
+const palidrome = str => {
     str = str.toLowerCase()
     cache = {}
 
@@ -19,7 +19,7 @@ const palidromme = str => {
     }
 }
 
-console.log(palidromme("racecar"))
+console.log(palidrome("racecar"))
 
 
 // 2. Given two variables that are equal to any integer. Swap the values of those variables without using a third variable
