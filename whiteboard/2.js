@@ -37,5 +37,5 @@ console.log(`b ${b}`)
 
 // 1) Given an array of strings, return another array containing all of its longest strings.
 // For inputArray = [“aba”, “aa”, “ad”, “vcd”, “aba”], the output should be allLongestStrings(inputArray) = [“aba”, “vcd”, “aba”].
-// 2) Given a list of objects of the form {first: ‘firstname’, last: ‘lastname’}, and a list of objects of the form {last: ‘lastname’, phone: ‘phonenumber’}, combine the two objects into one object containing all 3 keys.
-// For names = [ {first: ‘Dylan’, last: ‘Cooper’}, {first: ‘Jeremy’, last: ‘Roussel’} ], nums = [ {last: ‘Roussel’, phone: ‘832-555-5555’}, {last: ‘Cooper’, phone: ‘813-555-5555’ } ], combine(names, nums) = [ {first: ‘Dylan’, last: ‘Cooper’, phone: ‘813-555-5555’}, {first: ‘Jeremy’, last: ‘Roussel’, phone: ‘832-555-5555’} ]
+
+// will probably have to loop and then figure this out
