@@ -13,10 +13,12 @@ const palidrome = str => {
     cache = {}
 
     for (letter of str) {
-        if (!cache[letter]) {
+        if (!cache[letter]) { // this may need to be rewritten because it is not functioning as expected
             cache[letter] = letter
         }
     }
+
+    return cache
 }
 
 console.log(palidrome("racecar"))
