@@ -4,6 +4,23 @@
 // console.log(palindrome('racecar')) 
 // // expected output: True
 
+// 1. we need to create a function that will accept a string
+// 2. we need to reverse the string then make sure that the letters are the same reversed.
+// 3. can we do this using a cache system?
+
+const palidromme = str => {
+    str = str.toLowerCase()
+    cache = {}
+
+    for (letter of str) {
+        if (!cache[letter]) {
+            cache[letter] = letter
+        }
+    }
+}
+
+console.log(palidromme("racecar"))
+
 
 // 2. Given two variables that are equal to any integer. Swap the values of those variables without using a third variable
 //let a = 1;
